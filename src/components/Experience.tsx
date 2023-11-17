@@ -32,12 +32,7 @@ const Experience = () => {
             result=""
             des=""
           />
-          <ResumeCard
-            title="1st year Batch Representative"
-            subTitle="Faculty of Information Technology, University of Moratuwa(2021 - 2022)"
-            result=""
-            des=""
-          />
+          
         </div>
       </div>
       

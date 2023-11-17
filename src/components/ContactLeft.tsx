@@ -1,7 +1,20 @@
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+//import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { contactImg } from "../assets";
 
 const ContactLeft = () => {
+
+  const handleDownload = () => {
+
+    const downloadLink = 'https://drive.google.com/file/d/17gEYmWariMSpD8MC-V6-bHCXGs8Rkims/view?usp=sharing';
+
+    const anchor = document.createElement('a');
+    anchor.href = downloadLink;
+    anchor.download = 'Sinera Wijethunga CV.pdf'; 
+    anchor.click();
+  };
+   
+    
+
   return (
     <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#0B1120] to-[#0B1120] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
       <img
@@ -25,9 +38,9 @@ const ContactLeft = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
+        <h2 className="text-base uppercase font-titleFont mb-4">Find My CV</h2>
         <div className="flex gap-4">
-          <a href="https://instagram.com/mr_si_nera_?utm_source=qr&igshid=OGU0MmVlOWVjOQ==" target="_blank">
+          {/* <a href="https://instagram.com/mr_si_nera_?utm_source=qr&igshid=OGU0MmVlOWVjOQ==" target="_blank">
             <span className="bannerIcon">
               <FaInstagram />
             </span>
@@ -44,7 +57,12 @@ const ContactLeft = () => {
             <span className="bannerIcon">
               <FaFacebookF />
             </span>
-          </a>
+          </a> */}
+
+              <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" onClick={handleDownload} >
+                <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                <span>Download CV</span>
+              </button>
         </div>
       </div>
     </div>
