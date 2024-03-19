@@ -15,14 +15,14 @@ const Experience = () => {
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[500px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Editorial Pillar Meber"
-            subTitle="MoraSpirit(2023 - present)"
+            title="Trainee Software Engineer"
+            subTitle="Software Lifecycle Consultants"
             result=""
             des=""
           />
           <ResumeCard
             title="Editor"
-            subTitle="Leo Club of University of Moratuwa(2022 - 2023)"
+            subTitle="MoraSpirit(2023 - Present)"
             result=""
             des=""
           />

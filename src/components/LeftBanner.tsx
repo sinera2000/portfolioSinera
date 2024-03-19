@@ -5,7 +5,7 @@ import { FadeIn } from "./FadeIn";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["IT Undergraduate.", "Full Stack Developer.", "Web developer."],
+    words: ["An IT Undergraduate."," A Trainee Software Engineer", " A Full Stack Developer."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -19,11 +19,11 @@ const LeftBanner = () => {
           I'm <span className="text-designColor capitalize">Sinera Wijethunga</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
-          a <span>{text}</span>
+           <span>{text}</span>
           <Cursor cursorStyle="|" cursorColor="#ff014f" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
-        Currenly I am a IT undergraduate in University of Moratuwa, hoping to be a IT professonel with true desire of serving to my country with gained knowledge
+        A trainee software engineer, also an undergraduate of Faculty of Information Technology, University of Moratuwa, hoping to be an IT professonel with true desire of serving to my country with gained knowledge.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -59,7 +59,7 @@ const LeftBanner = () => {
               </span>
             </a>
             <a
-              href="https://github.com/swijethunga"
+              href="https://github.com/sinera2000"
               target="_blank"
             >
               <span className="bannerIcon">
