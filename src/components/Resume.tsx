@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Title from "./Title";
+//import Title from "./Title";
 import Education from "./Education";
 import Skills from "./Skills";
 import Experience from "./Experience";
@@ -10,7 +10,7 @@ const Resume = () => {
   const [educationData, setEducationData] = useState<boolean>(true);
   const [skillData, setSkillData] = useState<boolean>(false);
   const [experienceData, setExperienceData] = useState<boolean>(false);
-  
+
   return (
     <section
       id="resume"
@@ -18,7 +18,7 @@ const Resume = () => {
     >
       <FadeIn>
         <div className="flex justify-center items-center text-center">
-          <Title title="" des="My Resume" />
+          {/* <Title title="" des="My Resume" /> */}
         </div>
         <div>
           <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
@@ -27,7 +27,6 @@ const Resume = () => {
                 setEducationData(true);
                 setSkillData(false);
                 setExperienceData(false);
-                
               }}
               className={`${
                 educationData
@@ -42,7 +41,6 @@ const Resume = () => {
                 setEducationData(false);
                 setSkillData(true);
                 setExperienceData(false);
-                
               }}
               className={`${
                 skillData
@@ -57,7 +55,6 @@ const Resume = () => {
                 setEducationData(false);
                 setSkillData(false);
                 setExperienceData(true);
-                
               }}
               className={`${
                 experienceData
